@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Web untuk Kamu</title>
+    <style>
+        body {
+            background-color: #ffccdd;
+            font-family: 'Comic Sans MS', cursive;
+            color: #ff69b4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff0f5;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0px 0px 20px rgba(255, 105, 180, 0.3);
+            max-width: 90%;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 5em;
+            color: #ff69b4;
+            animation: bounce 1.5s infinite;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 25px;
+            background-color: #ff69b4;
+            color:white;
+            text-decoration: none;
+            font-size: 1.2em;
+            box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3);
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        #surprise-content {
+            display: none;
+            text-align: center;
+            
+        }
+        #surprise-content img {
+            max-width: 25%;
+            height: 40%;
+            border-radius: 1px;
+            box-shadow: 0px 5px 15px rgba(255, 105, 180, 0.3);
+            margin-top: 20px;
+        }
+        #surprise-content h2 {
+            font-size: 2em;
+            color: #ff69b4;
+            margin-top: 20px;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="initial-content">
+            <div class="heart">💖</div>
+            <h1>Hii,my pretty!</h1>
+            <p>arel cuma mau bilang... arel sayang banget sama chikaa! 💕</p>
+            <p>i lovee uu 3000 cantikuuu 🥰</p>
+            <div class="button" onclick="showSurprise()">klik dong kiw kiw</div>
+        </div>
+        <div id="surprise-content">
+            <img src="foto1.jpeg" alt="Foto Romantis">
+            <video width="400" height="570" controls autoplay>
+                <source src="WhatsApp Video 2024-11-04 at 19.27.24.mp4" type="video/mp4">
+                <source src="WhatsApp Video 2024-11-04 at 19.27.24.mp4" type="video/webm">
+                Browser Anda tidak mendukung elemen video.
+            </video>
+        
+            <img src="foto2.jpeg" alt="Foto Romantis">
+
+            <h2> thank you for making me feel loved,special and cared,thank you for giving me the love i never got and loving me the way i am 
+                thank you for everything that you did for me and thank you for coming in my life,i lovee uu chikaaa❤️</h2>
+        </div>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById('initial-content').style.display = 'none';
+            document.getElementById('surprise-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
